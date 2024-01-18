@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import './Components.css';
 import React, { useState } from "react";
 
@@ -14,26 +14,32 @@ function Header(){
             <h1>TTDL</h1>
             <ul className="nav">
                 <li>
-                    <Link to="/">Home</Link>
+                    <NavLink to="/">Home</NavLink>
                 </li>
+                {/* <NavLink to="/"><li className="home">Home</li></NavLink> */}
                 <li>
-                    <Link to="/About">About</Link>
+                    <NavLink to="/About">About</NavLink>
                 </li>
                 <li className="dropdown" onMouseEnter={visibleToggle} onMouseLeave={visibleToggle}>
-                    <Link to="/Portfolio">Portfolio</Link>
+                    <NavLink to="/Portfolio">Portfolio</NavLink>
                     {isVisible && (
-                        <ul className="dropdown-content">
-                            <li>
-                                <Link to="/Portfolio/Skills">Skills</Link>
+                        // <ul className="dropdown-content">
+                            <li  className="dropdown-content">
+                                <NavLink to="/Portfolio/Skills">Skills</NavLink>
                             </li>
-                        </ul>
+                        // </ul> 
                     )}
                 </li>
                 {/* <li>
-                    <Link to="/Portfolio/Skills" className="">Skills</Link>
+                    <NavLink to="/Portfolio/Skills" className="">Skills</NavLink>
                 </li> */}
                 <li>
-                    <Link to="/Contact">Contact</Link>
+                    <NavLink to="/Contact">Contact</NavLink>
+                </li>
+                <li>
+                    {/* Back out and only bright around cursor */}
+                    {/* Ofc the TryMe Has to be On to see */}
+                    <NavLink to="#">TryMe</NavLink> 
                 </li>
             </ul>
         </div>
