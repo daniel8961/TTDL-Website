@@ -1,0 +1,52 @@
+.Header{
+    border: 1px solide black;
+    height: 10vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+/* .Header h1{
+    padding-left: 8vw;
+} */
+.nav{
+    /* border: 1px solid black; */
+    width: 500px;
+    /* margin-right: 8vw; */
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.nav li{
+    margin-left: 55px;
+    padding: 15px;
+    /* margin: 10px; */
+    display: block;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.nav li:hover{
+    background-color: black;
+    transition: 0.3s linear;
+}
+.nav li:hover a{
+    color: white;    
+    transition: 0.2s linear;
+}
+.nav a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    padding: 0;
+}
+
+/* Footer.js */
+.Footer{
+    display: flex;
+    flex-direction: row;
+}

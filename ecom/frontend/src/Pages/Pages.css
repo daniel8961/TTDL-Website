@@ -1,0 +1,42 @@
+/* All Pages */
+.Page{
+    /* position: absolute; */
+    align-items: center;
+    text-align: center;
+    min-height: 100%;
+    margin: 0;
+    height: 80vh;
+    border: 3px solid red;
+}
+.Page h1{
+    text-align: center;
+}
+
+
+/* Home.js */
+.sec1{
+    border: 5px solid white;
+    line-height: 2.0;
+    border-radius: 50px;
+    padding: 40px 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    max-width: 800px;
+}
+.sec2{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Profile.js */
+
+
+/* Skills.js */
+
+
+/* NotFound.js */
+.NotFound{
+    text-align: center;
+}
