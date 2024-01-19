@@ -5,6 +5,12 @@ function Home(){
             <h1>Welcome</h1>
             <div className="sec1">
                 <p>
+                    Delete this part later. <br />
+                    I was going to change css names and
+                    Youtube videos on dropdown menus and 
+                    start styling dropdown-item.
+                </p>
+                <p>
                     Welcome to my website! My name is Tsung-Ti Lee (Zone-Dee). 
                     <br />I am a Web Developer with over 2 years of experience, specializing in 
                     React.js. <br />I have a strong passion in Full-Stack Development.

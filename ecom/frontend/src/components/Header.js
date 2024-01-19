@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import './Components.css';
 import React, { useState } from "react";
+import { MenuItem } from "./MenuItem";
 
 function Header(){
     const [isVisible, setVisible] = useState(false);
@@ -10,38 +11,34 @@ function Header(){
     };
 
     return(
-        <div className='Header'>
+        <div className="Header-margin">
+        <nav className='Header'>
             <h1>TTDL</h1>
             <ul className="nav">
-                <li>
-                    <NavLink to="/">Home</NavLink>
-                </li>
-                {/* <NavLink to="/"><li className="home">Home</li></NavLink> */}
-                <li>
-                    <NavLink to="/About">About</NavLink>
-                </li>
-                <li className="dropdown" onMouseEnter={visibleToggle} onMouseLeave={visibleToggle}>
-                    <NavLink to="/Portfolio">Portfolio</NavLink>
-                    {isVisible && (
-                        // <ul className="dropdown-content">
-                            <li  className="dropdown-content">
-                                <NavLink to="/Portfolio/Skills">Skills</NavLink>
+                {MenuItem.map((item, index) => {
+                    return(
+                        <a href={item.url} className={item.cNameLink}>
+                            <li key={index} className={item.cNameItem}> {item.label}
+                                {/* Sub-Content in dropdown menu */}
+                                {isVisible && item.subItem && (
+                                    <ul className="dropdown-content">
+                                        {item.subItem.map((subItem, subIndex) => {
+                                            <a href={subItem.url} className={subItem.cNameLink}>
+                                                <li key={subIndex} className={subItem.cNameItem}>{subItem.label}</li>
+                                            </a>
+                                        })}
+                                    </ul>
+                                )}
                             </li>
-                        // </ul> 
-                    )}
-                </li>
-                {/* <li>
-                    <NavLink to="/Portfolio/Skills" className="">Skills</NavLink>
-                </li> */}
-                <li>
-                    <NavLink to="/Contact">Contact</NavLink>
-                </li>
-                <li>
-                    {/* Back out and only bright around cursor */}
-                    {/* Ofc the TryMe Has to be On to see */}
-                    <NavLink to="#">TryMe</NavLink> 
-                </li>
+                        </a>
+                    );
+                })}
+                <a href="#">
+                    <li>TryMe</li>
+                </a>
+                
             </ul>
+        </nav>
         </div>
     );
 }
