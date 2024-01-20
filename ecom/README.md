@@ -24,31 +24,3 @@ Header Original Navigation Method
     {/* Ofc the TryMe Has to be On to see */}
     <NavLink to="#">TryMe</NavLink> 
 </li>
-
-Orginal Nav Menu Style:
-.nav li{
-    margin-left: 55px;
-    padding: 15px;
-    /* margin: 10px; */
-    display: block;
-    border-radius: 20px;
-    border: 1px solid black;
-
-    /* Making entire block clickable */
-    cursor: pointer;
-}
-.nav li:hover{
-    background-color: black;
-    color: white;
-    transition: 0.5s ease-in ease-out;
-}
-.nav li:hover a{
-    color: white;    
-    transition: 0.3s ease-in-out;
-}
-.nav a{
-    text-decoration: none;
-    color: inherit;
-    font-weight: bold;
-    padding: 0;
-}

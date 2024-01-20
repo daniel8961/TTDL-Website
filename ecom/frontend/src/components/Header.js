@@ -17,7 +17,7 @@ function Header(){
             <ul className="nav">
                 {MenuItem.map((item, index) => {
                     return(
-                        <a href={item.url} className={item.cNameLink}>
+                        <a href={item.url} className={item.cNameLink} onMouseEnter={visibleToggle} onMouseLeave={visibleToggle}>
                             <li key={index} className={item.cNameItem}> {item.label}
                                 {/* Sub-Content in dropdown menu */}
                                 {isVisible && item.subItem && (
@@ -33,8 +33,8 @@ function Header(){
                         </a>
                     );
                 })}
-                <a href="#">
-                    <li>TryMe</li>
+                <a href="#" className="nav-item-link">
+                    <li className="nav-item">TryMe</li>
                 </a>
                 
             </ul>

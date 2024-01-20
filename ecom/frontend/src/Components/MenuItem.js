@@ -23,6 +23,12 @@ export const MenuItem = [
                 cNameItem: 'sub-item',
                 cNameLink: 'sub-item-link',
             },
+            {
+                label: 'Skills',
+                url: '/portfolio/skills',
+                cNameItem: 'sub-item',
+                cNameLink: 'sub-item-link',
+            },
         ],
     },
     {
