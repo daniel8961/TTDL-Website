@@ -1,0 +1,44 @@
+/* All Pages */
+
+/* Home.js */
+.Page {
+    margin: 30px auto 20px auto;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+.section {
+    margin: 4vh 8vw;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+.long-block {
+    /* margin: 20px; */
+    padding: 0 5px;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    height: fit-content;
+    width: 50%;
+}
+
+
+/* Profile.js */
+
+
+/* Skills.js */
+
+
+/* NotFound.js */
+.NotFound{
+    text-align: center;
+}

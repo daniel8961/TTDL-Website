@@ -1,0 +1,18 @@
+.App {
+  /* background-color: var(--first-color); */
+  /* padding-left: 8vw;
+  padding-right: 8vw; */
+  text-align: center;
+  min-height: 100%;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --first-color: #EAE7DC;
+  --second-color: #d8c3a5;
+  --third-color: #8e8d8a;
+}
+
+
