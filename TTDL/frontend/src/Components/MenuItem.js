@@ -11,26 +11,26 @@ export const MenuItem = [
         cNameItem: 'nav-item',
         cNameLink: 'nav-item-link'
     },
-    {
-        label: 'Portfolio',
-        url: '/portfolio',
-        cNameItem: 'nav-item',
-        cNameLink: 'nav-item-link',
-        subItem: [
-            {
-                label: 'Skills',
-                url: '/portfolio/skills',
-                cNameItem: 'sub-item',
-                cNameLink: 'sub-item-link',
-            },
-            {
-                label: 'Skills',
-                url: '/portfolio/skills',
-                cNameItem: 'sub-item',
-                cNameLink: 'sub-item-link',
-            },
-        ],
-    },
+    // {
+    //     label: 'Portfolio',
+    //     url: '/portfolio',
+    //     cNameItem: 'nav-item',
+    //     cNameLink: 'nav-item-link',
+    //     subItem: [
+    //         {
+    //             label: 'Skills',
+    //             url: '/portfolio/skills',
+    //             cNameItem: 'sub-item',
+    //             cNameLink: 'sub-item-link',
+    //         },
+    //         {
+    //             label: 'Skills',
+    //             url: '/portfolio/skills',
+    //             cNameItem: 'sub-item',
+    //             cNameLink: 'sub-item-link',
+    //         },
+    //     ],
+    // },
     {
         label: 'Contact',
         url: '/contact',

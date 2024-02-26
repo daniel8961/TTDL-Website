@@ -1,5 +1,7 @@
 /* All Pages */
 
+
+
 /* Home.js */
 .Page {
     margin: 30px auto 20px auto;
@@ -9,6 +11,7 @@
     flex-direction: column;
     /* border: 1px solid black; */
     text-align: center;
+    font-weight: bold;
 }
 .section {
     margin: 4vh 8vw;
@@ -18,7 +21,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: fit-content;
+    height: 10vw;
 }
 .long-block {
     /* margin: 20px; */
