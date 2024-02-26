@@ -9,10 +9,12 @@ function HomeLayout(){
 
             {HomeContent.map((item, index) => {
                 return(
-                <div key={index} className="section">
-                    <div className={item.cName}>
+                <div key={index} className="section" id={item.label}>
+                    <div className={item.cName} id={item.label}>
+                        {/* <div className={item.title}> */}
                         <h2>{item.title}</h2>
                         <p>{item.content}</p>
+                        {/* </div> */}
                     </div>
                 </div>
                 );
